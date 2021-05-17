@@ -1,0 +1,6 @@
+[core]
+    remote = o_r_gdrive_storage
+['remote "gdrive_mega_project"']
+    url = gdrive://1mR4-HM0igmUv3W9RaVukwSEjxzxp6HV-
+['remote "o_r_gdrive_storage"']
+    url = gdrive://12akFetbFXxzvcVv2WhvpeVc_pUHClHDV
