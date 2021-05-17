@@ -1,5 +1,5 @@
 # International Project with students from Belgium and South Africa.
-This is an Machine Learning project to predict waste images in the form of Organic and Recyclable wastes. My group consists of 6 students. I am the AI student that is resposible for the machine learning.
+This is an Machine Learning project to predict waste images in the form of Organic and Recyclable waste. My group is one of 6 other groups and consists of 6 students. I am the AI student that is resposible for the machine learning.
 
 ## What I Learned
 * How to read image data
