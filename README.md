@@ -9,8 +9,7 @@ This is an Machine Learning project to predict waste images in the form of Organ
 * Saving model
 * Data Version Control
 * Test CNN model on unseen image data (see html files)
+* Hyperparamter tuning for Deep Learning models
 ---
 Yet to be integrated:
-
-* Hyperparamter tuning for Deep Learning models
 * Deploy model by using Django API or deploy model on Google Cloud Platform
