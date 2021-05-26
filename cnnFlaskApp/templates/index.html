@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Hello Kareem</p>
+
+    <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            Label: {{ messages }}
+{#            Accuracy: {{ messages[0] }}#}
+          {% endif %}
+        {% endwith %}
+    </p>
+
+    <form method="post" action="/predict" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
