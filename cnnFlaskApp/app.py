@@ -1,15 +1,7 @@
-from flask import Flask, render_template, request, redirect, flash, url_for, send_from_directory
-from werkzeug.utils import secure_filename
-from tensorflow.keras.models import load_model
-from tensorflow.keras.models import Sequential, load_model
 from keras.preprocessing import image
-import numpy as np
 import os
-from keras import backend as K
-import os
-from flask import Flask, request, redirect, url_for, send_from_directory, render_template
-from keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
-from tensorflow.keras.models import Sequential, load_model
+from flask import Flask, request, send_from_directory, render_template
+from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
 import numpy as np
 
@@ -17,12 +9,13 @@ import numpy as np
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 UPLOAD_FOLDER = 'images'
 
-
+# Method to return only allowed file types
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
 
+# Method to run prediction on model then return the result
 def predict(file):
     best_model = load_model('best_model_during_training_v1.h5')
 
@@ -49,12 +42,14 @@ app = Flask(__name__, template_folder='templates')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
+# Home page
 @app.route("/")
 def template_test():
     return render_template('index.html', label='', imagesource='file://null')
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+# POST request to save image then make prediction on image
+@app.route('/predict', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
         file = request.files['file']
@@ -66,7 +61,7 @@ def upload_file():
             output = predict(file_path)
     return output
 
-
+# View the saved images
 @app.route('/images/<filename>')
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91c973a7-a67b-46db-b8df-3cae8823c84a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/un_sdg_mega_project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnnFlaskApp/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnnFlaskApp/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +69,7 @@
       <workItem from="1622037133179" duration="216000" />
       <workItem from="1622037362965" duration="444000" />
       <workItem from="1622062649146" duration="98000" />
-      <workItem from="1622062811151" duration="320000" />
+      <workItem from="1622062811151" duration="697000" />
     </task>
     <servers />
   </component>
@@ -94,6 +89,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/un_sdg_international_project$app.coverage" NAME="app Coverage Results" MODIFIED="1622063121241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnnFlaskApp" />
+    <SUITE FILE_PATH="coverage/un_sdg_international_project$app.coverage" NAME="app Coverage Results" MODIFIED="1622063510496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cnnFlaskApp" />
   </component>
 </project>
