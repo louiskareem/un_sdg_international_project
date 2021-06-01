@@ -5,9 +5,9 @@ from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
 import numpy as np
 
-
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 UPLOAD_FOLDER = 'images'
+
 
 # Method to return only allowed file types
 def allowed_file(filename):
@@ -51,6 +51,7 @@ def template_test():
 # POST request to save image then make prediction on image
 @app.route('/predict', methods=['POST'])
 def upload_file():
+    print(request)
     if request.method == 'POST':
         file = request.files['file']
 
@@ -60,6 +61,7 @@ def upload_file():
             file.save(file_path)
             output = predict(file_path)
     return output
+
 
 # View the saved images
 @app.route('/images/<filename>')
