@@ -1,4 +1,4 @@
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 import os
 from flask import Flask, request, send_from_directory, render_template
 from tensorflow.keras.models import load_model

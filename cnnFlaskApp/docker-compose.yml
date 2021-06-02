@@ -1,0 +1,9 @@
+version: "3"
+services:
+  waste_classifier:
+    build: .
+#    build:
+#      context: ./cnnFlaskApp
+#      dockerfile: Dockerfile
+    ports:
+      - "5000:5000" # if changed, please change port in `frontend/proxy.conf.dev.json`
