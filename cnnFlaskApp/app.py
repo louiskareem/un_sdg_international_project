@@ -60,6 +60,7 @@ def upload_file():
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_path)
             output = predict(file_path)
+
     return output
 
 
@@ -70,4 +71,4 @@ def uploaded_file(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug=False, threaded=False)
+    app.run(debug=True)  # debug=False, port=5000, threaded=False
