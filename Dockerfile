@@ -2,10 +2,10 @@ FROM python:3.7
 MAINTAINER Dev721 "dev721.lkc@gmail.com"
 
 WORKDIR /cnnFlaskApp
-COPY /requirement.txt .
+COPY /requirements.txt .
 
 RUN pip3 install --upgrade pip
-RUN pip3 install -r requirement.txt
+RUN pip3 install -r requirements.txt
 
 COPY . /cnnFlaskApp
 EXPOSE 5000
