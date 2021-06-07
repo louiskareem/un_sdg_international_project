@@ -4,7 +4,6 @@
     <list default="true" id="91c973a7-a67b-46db-b8df-3cae8823c84a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/cnnFlaskApp/Procfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cnnFlaskApp/images/Rcdf1249ccaa8d2c8ded238f463514c37.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cnnFlaskApp/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/cnnFlaskApp/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cnnFlaskApp/Procfile.windows" beforeDir="false" />
@@ -133,7 +132,7 @@
       <workItem from="1622062811151" duration="4451000" />
       <workItem from="1622525947827" duration="2829000" />
       <workItem from="1622533683292" duration="5475000" />
-      <workItem from="1622542767474" duration="35768000" />
+      <workItem from="1622542767474" duration="38437000" />
     </task>
     <servers />
   </component>
