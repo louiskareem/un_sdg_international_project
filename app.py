@@ -1,6 +1,6 @@
 from tensorflow.keras.preprocessing import image
 import os
-from flask import Flask, request, send_from_directory, render_template
+from flask import Flask, request, send_from_directory, render_template, make_response, jsonify
 from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
 import numpy as np
@@ -44,14 +44,13 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Home page
 @app.route("/")
-def template_test():
-    return render_template('index.html', label='', imagesource='file://null')
+def home():
+    return render_template('index.html', imagesource='file://null')
 
 
 # POST request to save image then make prediction on image
 @app.route('/predict', methods=['POST'])
 def upload_file():
-    print(request)
     if request.method == 'POST':
         file = request.files['file']
 
@@ -59,9 +58,12 @@ def upload_file():
             filename = secure_filename(file.filename)
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_path)
-            output = predict(file_path)
 
-    return output
+            response = make_response(jsonify(predict(file_path)), 201)
+            return response
+    else:
+        response = make_response(jsonify({"error": "Method not allowed"}), 405)
+        return response
 
 
 # View the saved images
