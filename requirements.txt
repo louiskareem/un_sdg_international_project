@@ -11,5 +11,5 @@ numpy
 Pillow
 requests
 scikit-learn
-tensorflow
+tensorflow-cpu
 Werkzeug
