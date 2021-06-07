@@ -5,7 +5,7 @@ WORKDIR /cnnFlaskApp
 COPY /requirements.txt .
 
 RUN pip3 install --upgrade pip
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirement.txt
 
 COPY . /cnnFlaskApp
 EXPOSE 5000
