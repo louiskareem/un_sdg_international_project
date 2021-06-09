@@ -8,7 +8,7 @@ import numpy as np
 
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 UPLOAD_FOLDER = 'images'
-cam = cv2.VideoCapture(0)
+# cam = cv2.VideoCapture(0)
 
 
 # Method to return only allowed file types
