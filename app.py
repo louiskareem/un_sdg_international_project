@@ -79,7 +79,7 @@ def upload_file():
         return response
 
 
-@app.route('/video_feed')
+@app.route('/webcam_feed')
 def video_feed():
     global cam
     return Response(image_predict(),
