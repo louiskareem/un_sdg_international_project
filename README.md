@@ -13,6 +13,8 @@ This is an Machine Learning project to predict waste images in the form of Organ
 * How to deploy ML model using Flask
 * How to integrate containerization with Docker
 
+--- App is currently down ---
+
 There are two branches: main & deployment. Deployment branch is used for deploying the web app to Heroku. Main is used to showcase the work.
 
 If you would like to test the model in production, here's the link: https://waste-classification-sdg.herokuapp.com/
