@@ -4,7 +4,7 @@ from flask import Flask, request, send_from_directory, render_template, make_res
 from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
 import numpy as np
-import cv2
+# import cv2
 
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 UPLOAD_FOLDER = 'images'
@@ -41,13 +41,13 @@ def predict(file):
     return prediction
 
 
-def image_predict():
-    success, webcam_img = cam.read()
-    cv2.imwrite(os.path.join(app.config['UPLOAD_FOLDER'], 'img_test.jpg'), webcam_img)
-
-    response = predict(os.path.join(app.config['UPLOAD_FOLDER'], 'img_test.jpg'))
-    print(response)
-    return response
+# def image_predict():
+#     success, webcam_img = cam.read()
+#     cv2.imwrite(os.path.join(app.config['UPLOAD_FOLDER'], 'img_test.jpg'), webcam_img)
+#
+#     response = predict(os.path.join(app.config['UPLOAD_FOLDER'], 'img_test.jpg'))
+#     print(response)
+#     return response
 
 
 app = Flask(__name__, template_folder='templates')
@@ -78,17 +78,11 @@ def upload_file():
         return response
 
 
-@app.route('/webcam_feed')
-def video_feed():
-    global cam
-    return Response(image_predict(),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
-
-
-# View the saved images
-@app.route('/images/<filename>')
-def uploaded_file(filename):
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+# @app.route('/webcam_feed')
+# def video_feed():
+#     global cam
+#     return Response(image_predict(),
+#                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 if __name__ == "__main__":
