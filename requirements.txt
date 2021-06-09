@@ -9,7 +9,6 @@ matplotlib
 matplotlib-inline
 numpy
 Pillow
-requests
 scikit-learn
 tensorflow-cpu
 Werkzeug

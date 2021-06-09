@@ -5,7 +5,6 @@ from tensorflow.keras.models import load_model
 from werkzeug.utils import secure_filename
 import numpy as np
 import cv2
-from PIL import Image
 
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 UPLOAD_FOLDER = 'images'
