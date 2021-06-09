@@ -1,10 +1,11 @@
-from tensorflow.keras.preprocessing import image
 import os
-from flask import Flask, request, send_from_directory, render_template, make_response, jsonify, Response
-from tensorflow.keras.models import load_model
-from werkzeug.utils import secure_filename
 import numpy as np
 import cv2
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing import image
+from werkzeug.utils import secure_filename
+from flask import Flask, request, render_template, make_response, jsonify
+
 
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 UPLOAD_FOLDER = 'images'
@@ -41,6 +42,8 @@ def predict(file):
     return prediction
 
 
+# Method to run prediction and return results
+# Function uses the PC webcam to capture and save image then classify the image
 def image_predict():
     success, webcam_img = cam.read()
     cv2.imwrite(os.path.join(app.config['UPLOAD_FOLDER'], 'img_test.jpg'), webcam_img)
@@ -79,7 +82,6 @@ def upload_file():
 
 @app.route('/webcam_feed')
 def video_feed():
-    global cam
     response = make_response(image_predict(), 201)
     return response
 
