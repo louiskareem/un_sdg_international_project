@@ -17,4 +17,4 @@ There are two branches: main & deployment. Deployment branch is used for deployi
 
 If you would like to test the model in production, here's the link: https://waste-classification-sdg.herokuapp.com/
 
-Additionally, I added a feature to classify an image using your webcam by clicking the link in the app or going to this linke: https://waste-classification-sdg.herokuapp.com/webcam_feed This is feature temporarily removed
+<!-- Additionally, I added a feature to classify an image using your webcam by clicking the link in the app or going to this linke: https://waste-classification-sdg.herokuapp.com/webcam_feed This is feature temporarily removed -->
