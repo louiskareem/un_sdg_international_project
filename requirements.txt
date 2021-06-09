@@ -12,3 +12,4 @@ Pillow
 scikit-learn
 tensorflow-cpu
 Werkzeug
+opencv-python
