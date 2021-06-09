@@ -11,6 +11,7 @@ This is an Machine Learning project to predict waste images in the form of Organ
 * Test CNN model on unseen image data (see html files)
 * Hyperparamter tuning for Deep Learning models
 * How to deploy ML model using Flask
+* How to productionize model to an online environment, Heroku
 * How to integrate containerization with Docker
 
 There are two branches: main & deployment. Deployment branch is used for deploying the web app to Heroku. Main is used to showcase the work.
