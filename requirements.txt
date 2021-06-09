@@ -8,7 +8,5 @@ Keras-Preprocessing
 matplotlib
 matplotlib-inline
 numpy
-Pillow
-scikit-learn
 tensorflow-cpu
 Werkzeug
