@@ -16,4 +16,5 @@ This is an Machine Learning project to predict waste images in the form of Organ
 There are two branches: main & deployment. Deployment branch is used for deploying the web app to Heroku. Main is used to showcase the work.
 
 If you would like to test the model in production, here's the link: https://waste-classification-sdg.herokuapp.com/
-Additionally, instead of uploading an image to classify you can capture an image with your webcam to classify waste image by clicking the link in the app or going to this linke: https://waste-classification-sdg.herokuapp.com/webcam_feed
+
+Additionally, I added a feature to classify an image using your webcam by clicking the link in the app or going to this linke: https://waste-classification-sdg.herokuapp.com/webcam_feed This is feature temporarily removed
