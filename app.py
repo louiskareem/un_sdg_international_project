@@ -87,4 +87,4 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000, threaded=False, host='0.0.0.0')  # debug=False, port=5000, threaded=False
+    app.run(debug=False, port=5000, threaded=False, host='0.0.0.0')  # debug=False, port=5000, threaded=False
