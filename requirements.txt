@@ -9,4 +9,5 @@ matplotlib
 matplotlib-inline
 numpy
 tensorflow-cpu
+tensorflow
 Werkzeug
